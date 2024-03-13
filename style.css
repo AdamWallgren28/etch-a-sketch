@@ -1,0 +1,114 @@
+body {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+}
+
+header, footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header {
+    height: 25vh;
+    background-color: darkgrey;
+}
+
+main {
+    height: 30vh;
+    background-color: lightgrey;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 15vh;
+}
+@media screen and (max-width: 600px) {
+    header {
+        height: 20vh;
+    }
+    main {
+        height: 65vh;
+        flex-direction: column;
+        align-items: center;
+        padding: 0;
+    }
+  }
+
+    
+
+    .colorPick{
+        width: 17rem;
+       
+    }
+    .colorChoices {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;    
+    }
+        .color{
+            width: 1.5rem;
+            height: 1.5rem;
+            border-color: darkgrey grey grey darkgrey;
+            border-width: 2px;
+            border-style: solid;
+            border-radius: 1.5rem;
+        }
+        #color1{background-color: yellow;}
+        #color2{background-color: red;}
+        #color3{background-color: limegreen;}
+        #color4{background-color: blue;}
+        #color5{background-color: violet;}
+        #color6{background-color: black;}
+        #color7{background-color: white;}
+        .color:hover{opacity:65%;}
+        .color:active{
+            border-color: grey black black grey;
+            opacity: 100%;
+        }
+        #colorE{background: linear-gradient(45deg, white 50%, rgba(255, 255, 255, 0.5) 50%);}
+
+        .eraserDiv {
+            width: 100%;
+        }
+        .eDiv{
+            display: flex;
+            justify-content: space-between;
+    
+        }
+
+    
+
+    .ritBox {
+        margin: 1rem;
+        display: flex;
+        flex-wrap:wrap;
+        width: 15rem;
+        border-style: solid;
+        border-width: 1px;
+        border-color: Black;
+        background-color: grey;
+    }
+    /* Penna/sudd-ikon funkar ej:
+    .ritBox:hover{
+        cursor: url('pencil-cursor.svg'), auto;        
+    }*/
+
+    .ruta {
+        background-color: white;
+        width: 1rem;
+        height: 1rem;
+        border-color: lightgray;
+        border-style: solid;
+        border-width: 1px;
+        box-sizing: border-box;   }
+    
+
+    #clearBtn {
+        margin: 0rem 1rem 1rem;
+    }
+footer {
+    height: 15vh;
+    background-color:  darkgrey;
+}
